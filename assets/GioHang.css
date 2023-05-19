@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===========Begin header=========== */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 74px;
+    background-color: white;
+}
+
+.header .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+div .container-fluid{
+    padding: 5px 40px;
+}
+
+/* ===========Begin column-left=========== */
+.header .nav-column.left{
+    width: 17%;
+    
+}
+
+.header .nav-column{
+    float: left; 
+    height: 64px;   
+    line-height: 64px;
+}
+
+#lg-jd{
+    width: 60px;
+}
+/* ===========End column-left=========== */
+
+/* ===========Begin column-center=========== */
+.nav li{
+    display: inline-block;
+    position: relative;
+}
+
+.nav > li > a{
+    color: #111111;
+    font-size: 14px;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav li a{
+    text-decoration: none;
+    display: block;
+}
+
+.nav li:hover .subnav-convert,
+.nav li:hover .subnav-vans,
+.nav li:hover .subnav-adidas,
+.nav li:hover .subnav-jordan,
+.nav li:hover .subnav-nike{
+    display: block;
+}
+
+.nav > li:hover > a,
+.nav .subnav-convert li:hover a,
+.nav .subnav-vans li:hover a,
+.nav .subnav-adidas li:hover a,
+.nav .subnav-jordan li:hover a,
+.nav .subnav-nike li:hover a{
+    color: #c91f28;
+}
+
+.nav .subnav-convert,
+.nav .subnav-vans,
+.nav .subnav-adidas,
+.nav .subnav-jordan,
+.nav .subnav-nike{
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 63px;
+    left: 0; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav .subnav-convert a,
+.nav .subnav-vans a,
+.nav .subnav-adidas a,
+.nav .subnav-jordan a,
+.nav .subnav-nike a{
+    color: #111111;
+    padding: 18px 18px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 40px;
+    display: block;
+}
+
+/* ===========End column-center=========== */
+
+/* ===========Begin column-right=========== */
+.header .nav-column.right{
+    width: 23%;
+    position: relative;
+}
+
+.search{
+    position: relative;
+    width: 190px;
+    margin-right: 5px;
+    left: 40px;
+}
+
+.search > input{
+    padding: 0 20px;
+    border-radius: 40px;
+    height: 40px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 15px;
+    width: 190px;
+    outline: none;
+}
+
+.search > button{
+    position: absolute;
+    font-size: 17px;
+    border: none;
+    top: 13px;
+    right: 20px;
+    line-height: 40px;
+    border-radius: 40px;
+    background-color: #f3f3f3;
+}
+
+.shopping-icon{
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    font-size: 25px;
+}
+
+.sign-in1,
+.shopping-icon1{
+    text-decoration: none;
+    color:#111111;
+}
+
+.sign-in{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 25px;
+}
+/* ===========End column-right=========== */
+/* ===========End header=========== */
+
+/* ===========Begin breadcrumb=========== */
+.breadcrumb{
+    background-color: #EEEEEE;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 170px;
+    margin-top: 74px;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: #111111;
+    font-size: 13px;
+}
+/* ===========End breadcrumb=========== */
+
+/* ===========Begin cart=========== */
+.title{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+    color: #111111;
+}
+
+.count-cart{
+    text-align: center;
+    margin-top: 20px;
+    color: #111111;
+}
+
+.strikethrough{
+    content: "";
+    background: #252a2b;
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 25px auto 0;
+}
+
+/* ===========Begin gio hang=========== */
+.product1{
+    display: grid;
+    margin: auto;
+    width: 1170px;
+    grid-template-columns: 130px 400px 230px 150px 230px 24px;
+    grid-template-rows: 40px 105px;
+    grid-template-areas:
+        'top1 top2 top3 top4 top5 top6'
+        'mid1 mid2 mid3 mid4 mid5 mid6';
+}
+
+.product{
+    margin-top: 25px;
+}
+
+.top5,
+.top4,
+.top3,
+.top2{
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.mid1 img{
+    width: 120px;
+}
+
+.mid5,
+.mid3,
+.mid2{
+    padding-left: 20px;
+    line-height: 105px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.mid4{
+    padding-left: 12px;
+    line-height: 105px;
+}
+
+.mid6 a{
+    line-height: 105px;
+    font-size: 25px;
+}
+
+.btn.value,
+.btn.increase,
+.btn.decrease{
+    width: 25px;
+    height: 25px;
+}
+
+.strikethrough1{
+    content: "";
+    background: #DDDDDD;
+    display: block;
+    width: 1200px;
+    height: 1px;
+    margin: 25px auto 0;
+}
+
+.pay{
+    display: grid;
+    margin: auto;
+    width: 1170px;
+    margin-top: 20px;
+    grid-template-columns: 700px 464px;
+    grid-template-rows: 48px 125px;
+    grid-template-areas: 
+    'title-bt1 title-bt2'
+    'bottom1 bottom2';
+}   
+
+.title-bt1,
+.title-bt2{
+    font-size: 20px;
+    line-height: 48px;
+}
+
+.bottom1 textarea{
+    font-size: 15px;
+    background: #ededed;
+    padding: 20px 15px;
+    outline: none;
+    width: 600px;
+    min-height: 130px;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+.total-pay{
+    font-size: 16px;
+    color: #5c5c5c;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.money{
+    font-size: 24px;
+    color: #111111;
+}
+
+.button-pay{
+    width: 110px;
+    height: 32px;
+    background-color:#111111;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+/* ===========End cart=========== */
+
+/* ===========Begin Footer=========== */
+.footer{
+    width: 100%;
+    height: 320px;
+    background-color:#111111;
+    margin-top: 50px;
+}
+
+.footer-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 200px;
+}
+
+.footer-container{
+    width: 200px;    
+}
+
+.footer-list{
+    list-style-type: none;
+    display: block;
+}
+
+.footer-heading{
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-list .footer-item{
+    padding-top: 12px;
+}
+
+.footer-list .footer-item a{
+    text-decoration: none;
+    color:#bebebe;
+    font-size: 14px;
+}
+
+.footer-item .footer-item-link{
+    width: 20px;
+}
+
+/* ===========End Footer=========== */
